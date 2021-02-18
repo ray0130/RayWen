@@ -7,12 +7,39 @@
 			position: fixed;
 			top:10%;
 			width: 100%;
+			height: 100%;
+			z-index: -3;
+			opacity: 0.9;
 		}
+		.header{
+			position:relative;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 10%;
+			background-color: white;
+		}
+		.headhome{
+			position: absolute;
+			top: 10%;
+			left: 20%;
+			box-sizing: border-box;
+			border: 1px hidden;
+			transition: background-color 2s;
+		}
+		div.headhome:hover{
+			background-color: black;
+		}
+
+
 	</style>
 </head>
 <body>
 	<div class="bg">
-		<img src="assets/bg.JPG">
+		<img src="assets/bg.JPG" id='bgimg'>
+	</div>
+	<div class="header">
+		<div class="headhome"></div>
 	</div>
 </body>
 </html>
