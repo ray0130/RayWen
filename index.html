@@ -1,45 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Ray's Portfolio</title>
-	<style type="text/css">
-		.bg{
-			position: fixed;
-			top:10%;
-			width: 100%;
-			height: 100%;
-			z-index: -3;
-			opacity: 0.9;
-		}
-		.header{
-			position:relative;
-			top:0;
-			left:0;
-			width: 100%;
-			height: 10%;
-			background-color: white;
-		}
-		.headhome{
-			position: absolute;
-			top: 10%;
-			left: 20%;
-			box-sizing: border-box;
-			border: 1px hidden;
-			transition: background-color 2s;
-		}
-		div.headhome:hover{
-			background-color: black;
-		}
+  <head>
+    <title>Ray's Portfolio</title>
+    <style type="text/css">
+      body {
+        position: relative;
+        width: 100%;
+        margin: 0px;
+      }
+      .bg {
+        position: fixed;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        opacity: 0.9;
+        display: grid;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index; -10;
+      }
+      #bgimg {
+        opacity: 1.0;
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+        z-index: -3;
+      }
+      .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15vh;
+        background-color: white;
+      }
+      .headitem {
+        position: absolute;
+        top: 20%;
+        width: 20%;
+        height: 50%;
+        margin-bottom: 50%;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px hidden;
+        transition: background-color 0.5s;
+      }
+      .headhome {
+        left: 10%;
+      }
+      .headproj {
+        left: 40%;
+      }
+      .headabout {
+        left: 70%;
+      }
+      div.headitem:hover {
+        background-color: rgba(220, 220, 220, 0.9);
+        opacity: 0.7;
+      }
+      .head-txt {
+        margin-top: 8%;
+        z-index: 3;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
 
-
-	</style>
-</head>
-<body>
-	<div class="bg">
-		<img src="assets/bg.JPG" id='bgimg'>
-	</div>
-	<div class="header">
-		<div class="headhome"></div>
-	</div>
-</body>
+      div.container {
+        position: relative;
+        top: 0;
+        margin: 0;
+        height: 2000px;
+/*         background-color: black;
+        opacity: 0.3; */
+      }
+      div.main-title{
+        position: fixed;
+        top: 17%;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        height: 30%;
+        font-size: 90px;
+        text-align: center;
+        color: white;
+        z-index: 10;
+        opacity: 1.0;
+/*         background-color: blue; */
+      }
+      .title-txt{
+        z-index: 5;
+      }
+      .main-card{
+        position: absolute;
+        display: block;
+        top: 25%;
+        margin: 0 25% 0 25%;
+        width: 50%;
+        height: 700px;
+        background-color: white;
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <img
+        src="https://cdn.glitch.com/e022b4a4-70a3-4958-bdf1-3a51c6669e70%2Fbg.JPG?v=1613669615033"
+        id="bgimg"
+      />
+    </div>
+    <div class="header">
+      <a target="_self" href="#">
+        <div class="headhome headitem">
+          <p class="head-txt">
+            HOME
+          </p>
+        </div>
+      </a>
+      <a target="_blank" href="">
+        <div class="headproj headitem">
+          <p class="head-txt">
+            PROJECTS
+          </p>
+        </div>
+      </a>
+      <a target="_blank" href="">
+        <div class="headabout headitem">
+          <p class="head-txt">
+            ABOUT ME
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="main-title">
+        <h1 class="title-txt">
+          ray wen
+        </h1>
+      </div>
+    <div class="container">
+      <div class="main-card">
+        
+      </div>
+    </div>
+  </body>
 </html>
